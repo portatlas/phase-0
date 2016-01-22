@@ -58,3 +58,29 @@ I think this would really depend on what the user intends to do and the sophisti
 - help: for OSX I use man to get to the manual of commands or arguments
 
 ## Forking and Cloning
+
+
+**If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be? Why would you fork a repository as opposed to create a new one?**
+
+Create a New Repo in GitHub
+A. Go to the home page of GitHub and make sure you are signed in
+B. Click on the plus sign at the top right of the screen (near your profile picture)
+C. A drop down menu should appear, with the option to create a new repository
+D. Name and configure the repository and click "Create Repository"
+
+Fork a Repo in GitHub
+A. Make sure you are signed in to Github
+B. Go to the repository you would like to fork
+C. Click on the fork button of the repository you would like to fork (you may have to select which github account you want the repo to be forked to assuming you have multiple github accounts.)
+
+Clone a Repo in GitHub via the CLI
+A. Go to the repo you want to fork on github, copy the the HTTPS URL associated to that URL
+B. In your terminal, navigate to the folder you would like to clone the repo to via the cd command
+C. Type "git clone " followed by the HTTPS URL you copied from the GitHub page and hit RETURN
+D. Type ls to check whether the repo has been cloned to your selected directory.
+
+You would want to fork a repo as opposed to creating a new one, if you wanted to work on an existing code base that is already available elsewhere.  You might get your hands on open source code that has the licensing for you to make changes so instead of reinventing the wheel you can fork the code and adapt it to your needs.
+
+**What struggles did you have setting up git and GitHub? What did you learn in the process?**
+
+The biggest struggle for me is remember the different git commands and what they do. I think it makes sense to watch someone do it.  However, it is a different situation to do it myself.  I think have a solid mental map of what is happening at each command will be important to learn as well as the commands itself.  After getting an overview of Git and GitHub, through these exercises I learned how to create repos, fork repos, and clone repos.
