@@ -3,6 +3,7 @@
 
 **What is a wireframe?**
 A wireframe is a blueprint of the website that provides an overview of the information hierarchy, layout and navigation.
+
 **What are the benefits of wireframing?**
 Wireframing is beneficial as it allows the developer to explore how the websites structure will look like without being distracted by details including color palette, typographic and content.  Furthermore, as wireframes are typically easy to create and revise, the develop can make multiple iterations before development.
 
