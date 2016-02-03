@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My DBC BLOG</title>
+</head>
+<body>
+    <article>
+    <h1>Git and GitHub</h1>
+    <h2><i>How They Work Together</i></h2>
+    <time datetime="2016-01-22">22JAN16</time>
+
+        <section>
+          <h5>Git and GitHub: The Differences</h5>
+          <p>
+            Git and GitHub are not the same thing. Git is a local version control system that allows you to track and manage changes to your work. GitHub is a web-based version control system that allows you and other people (friends and strangers) to work collaboratively. Despite the differences in their use and functionality, a  lot of magic can happen when Git and GitHub are used together.
+          </p>
+        </section>
+
+        <section>
+          <h5>Cloning from GitHub to your Local Machine</h5>
+          <p>
+            To reiterate, Git is a version control system that runs on your <u>local environment</u>,whereas GitHub tracks and manages files on the <u>web</u>.  What if, you find source code on GitHub that you would like to contribute to or make changes to the code to match your needs. Fortunately (assuming the licenses permit), you can 'clone' the repository on GitHub to your local environment via the git clone command and the HTTPS URL. For example:
+
+            <p>git clone https://github.com/user/repo</p>
+
+            After that command runs, you have an exact copy of the source code from GitHub on your machine as well.  You can do anything your hearts content with the source code on your machine.
+          <h5>Pushing from your Local Machine to GitHub</h5>
+          <p>
+            Now that you have added some functionality to the code and would like to share this back to the GitHub community.  You can push your changes to GitHub via the command git push origin.
+          </p>
+
+          <p>git push origin my-new-function</p>
+
+          <p>
+            In this case, "origin" is pointing to your repo on GitHub. You might be asked to supply your login credentials to GitHub and this is one place where you see Git and GitHub interacting with each other quite clearly.
+          </p>
+        </section>
+
+        <section>
+          <h5>Conclusion</h5>
+          <p>
+            Eventhough, Git and GitHub are two different tools at your disposal they work together fairly well.  One thing I don't really understand at this point is why I must make a <i>Pull Request</i>on the GitHub web interface. I wonder if there is some way to do this within the Command Line?  I'll see if I can figure out an answer to that by my next blog post. Addtionally,  I am sure there are plenty of other ways Git works with GitHub, but thus far these are the two major ones I have discovered during my week's foray into the world of Git and GitHub. I will update this as I find out more as well.
+          </p>
+          <p>
+            Happy coding!
+          </p>
+        </section>
+      </article>
+</body>
+</html>
+
+<!--
+1. What HTML5 tags have you used in this challenge and continue to return to often? Why?
+   For this exercise I learned to use the <article> and <section> tags as this is a great way
+   to segment the content on my page. I also learned to use the <time> tag as it might be useful for
+   calculations.
+
+2. How do elements get laid out on a page? What is the order the browser uses to display elements?
+   Elements gets laid out in a sequential order on the page. The typical structure will have a head and a body. There are also other elements that are used to enhance the readibility of the code. Based on my understanding the browser reads elements based on the sequence of the tags.
+
+3. What did you learn about Sublime in this challenge? Do you think you'll create more handy snippets at a later date? What about research some shortcuts that already exist?
+   I learned how to create snippets with Sublime. I also learned about how Sublime has settings for different languages. I think creating snippets will be critical to enhancing efficiency and productivity. Once I get a pattern of code that I use constantly I will create a snippet for it. I also learned how to use multiple cursors on Sublime.
+-->
