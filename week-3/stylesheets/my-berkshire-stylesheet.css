@@ -1,0 +1,108 @@
+html{
+  color:#000080;
+}
+
+a:link{
+  color:#800080;
+}
+
+a:visited {
+    color: #ff0000 ;
+}
+
+html{
+  background-color: #ffffff;
+}
+
+.desc-text{
+  font-size: 10px;
+}
+
+.table{
+  margin-left:60px;
+  margin-right:50px;
+}
+
+td {
+  height: 50px;
+  padding-left: 18px;
+}
+
+.caps{
+  font-weight: bold;
+  font-size: 35px;
+}
+.heading{
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+}
+
+.address{
+  margin: 0px;
+  font-size: 12px;
+}
+
+.center{
+  text-align: center;
+}
+
+.homepage{
+  margin: 0px;
+  font-size: 14px;
+}
+
+.geico{
+  font-size: 14px;
+  text-align: center;
+}
+
+.geico-image{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-top: 15px;
+}
+
+.comments{
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+.footer{
+  font-size: 14px;
+}
+
+.legal{
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.bottom-line{
+  border-bottom-style: solid;
+  border-color: #c0c0c0;
+  border-width: 1.5px;
+  padding-bottom: 15px;
+}
+
+li{
+  text-indent: -.9em;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+It is important to to define what the relation of the html is to the external file. In this case the file we were referencing is a stylesheet, specifically a text file containing CSS. Furthermore, it is important to point to the right file so we just had to check the file path to make sure it is referencing the correct file.
+
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+We experimented with positioning by putting in an arbitrary value and adjusting the value accordingly so it matches the real site. It is tricky to get all the positioning exactly as the original site but I think we got it close enough to where we were happy with the site.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+We used color to change the font color. We used font-size to update the size of the font and font-weight to make certain text bold. Additionally, we used margin and padding to create some space for some of our content.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+Yes, we modified the HTML to use classes because we recalled from the "CSS Primer" video that classes are the preferred categorization. We made an effort to recycle the classes in order to prevent any extraneous code. For example, we reused the .center to center align text and the .bottom-line to create a line below text. The reason why we choose class is because we could reuse the styling on multiple elements. We would have used id if we wanted to target a specific element once. I think there were occassions where we could have used ids but we still choose to use class.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+I would say that the readibility of our code can be improved. However, we choose to seperate our styling from the html which is better practice. I think for a site this simple it might not be too much of a big deal, but seperating styling from html will allow us to scale the site more effectively. If we wanted to add more pages it will be a lot easier to reference a standard styling sheet.
+*/
