@@ -1,12 +1,10 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
-# number = 10
 
 
 # Your Solution Below
-# ary = []
 
 
 
@@ -26,13 +24,16 @@ def factorial(number)
     end
     # ary.each {|x| number_plus1 *= i}
     # take test and multiply it within each value in the array
-    def product(ary)
-      final = 1
-      ary.each { |i| final *= i }
-      final
-    end
+    product(ary)
   end
   p product(ary)
 end
 
-factorial(10)
+
+def product(ary)
+  x = 1
+  ary.each { |i| x *= i }
+  x
+end
+
+
