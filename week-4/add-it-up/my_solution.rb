@@ -18,11 +18,11 @@
 
 # 1. total initial solution
 
-def total(ary)
-  number = 0
-  ary.each { |i| number += i }
-  number
-end
+# def total(ary)
+#   number = 0
+#   ary.each { |i| number += i }
+#   number
+# end
 
 
 # 3. total refactored solution
@@ -47,15 +47,23 @@ end
 
 
 # 5. sentence_maker initial solution
-
+# def sentence_maker(ary)
+#     lastword = ary.pop
+#     newword = lastword + "."
+#     ary.push(newword)
+#     firstword = ary.shift
+#     newfirstword = firstword.capitalize
+#     ary.unshift(newfirstword)
+#     ary.join(" ")
+# end
 
 
 # 6. sentence_maker refactored solution
 
 def sentence_maker(ary)
     lastword = ary.pop
-    newword = lastword + "."
-    ary.push(newword)
+    newlastword = lastword + "."
+    ary.push(newlastword)
     firstword = ary.shift
     newfirstword = firstword.capitalize
     ary.unshift(newfirstword)
