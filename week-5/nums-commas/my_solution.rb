@@ -43,7 +43,8 @@ end
 
 def separate_comma(num)
   num_array = num.to_s.reverse.split('')
-  p num_array.each_slice(3).map(&:join).join(',').reverse
+  comma_number = num_array.each_slice(3).map(&:join).join(',')
+  p comma_number.reverse
 end
 
 
