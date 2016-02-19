@@ -44,6 +44,7 @@ end
 my_array_sorting_method(i_want_pets)
 
 
+
 def my_hash_sorting_method(source)
   p source.sort_by{|key,value| [value, key]}
 end
