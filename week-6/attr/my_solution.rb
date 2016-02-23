@@ -2,7 +2,7 @@
 
 # I worked on this challenge myself.
 
-# I spent [#] hours on this challenge.
+# I spent 1.5 hours on this challenge.
 
 # Pseudocode
 
@@ -74,9 +74,27 @@ what.salute
 # Is this code simpler than the last?
 # Yes this change is a lot more simpler than release 2. It removed another 3 # lines of code with just one line.
 
+
+# Release 6: Reflect
+
 # What is a reader method?
+# A reader method allows the class to access these attributes but not make
+# any changes to the attributes.
 
 # What is a writer method?
+# A writer method allows the class to make changes to these attributes.
+
 # What do the attr methods do for you?
+# attr methods allows programmers to store and change attributes of the class
+# without creating methods for doing them. This makes it easier for someone
+# reviewing the code and is also a much more streamlined approach.
+
 # Should you always use an accessor to cover your bases? Why or why not?
+# Using accessors would make your code easier to read and more streamline.
+# Based on my understanding thus far, we would want to use accessors where possible
+# however, there may be instances where creating instance variables and
+# methods maybe useful.
+
 # What is confusing to you about these methods?
+# Thus far sending these messages across methods have been straightforward.
+# I would be curious to see how they may work in a more complicated situation.
