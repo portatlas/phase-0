@@ -288,7 +288,6 @@ class BingoBoard
   end
 
   def gen()
-<<<<<<< HEAD
     bingo_array = ["B","I","N","G","O"]
     letter =  bingo_array.sample
     number = rand(100) + 1
@@ -297,14 +296,23 @@ class BingoBoard
     p bingo_hash
   end
 
-=======
+
     number_test = [47]
     @number = number_test.sample
     # p @nunber
     @bingo_hash[@column] = @number
     p @bingo_hash
   end
->>>>>>> master
+
+
+
+    number_test = [47]
+    @number = number_test.sample
+    # p @nunber
+    @bingo_hash[@column] = @number
+    p @bingo_hash
+  end
+
 
   def check()
     if @board[@column].include?(@number)
@@ -350,11 +358,14 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
-<<<<<<< HEAD
+
 new_game.gen
-=======
+
 new_game.check
 >>>>>>> master
+
+new_game.check
+
 
 
 #Reflection
