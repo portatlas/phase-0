@@ -9,14 +9,14 @@
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
 #fill in the outline here
 
-def gen()
-  bingo_array = ["B","I","N","G","O"]
-  letter =  bingo_array.sample
-  number = rand(100) + 1
-  bingo_hash = Hash.new
-  bingo_hash[letter] = number
-  p bingo_hash
-end
+# def gen()
+#   bingo_array = ["B","I","N","G","O"]
+#   letter =  bingo_array.sample
+#   number = rand(100) + 1
+#   bingo_hash = Hash.new
+#   bingo_hash[letter] = number
+#   p bingo_hash
+# end
 
 # gen
 
@@ -107,9 +107,6 @@ board = [[47, 44, 71, 8, 88],
         [25, 31, 96, 68, 51],
         [75, 70, 54, 80, 83]]
 
-board.each_index do |x|
-  puts x
-end
 
 
 bingo_hash = {"O"=>83}
@@ -183,6 +180,15 @@ class BingoBoard
     @bingo_board = board
   end
 
+  def gen()
+    bingo_array = ["B","I","N","G","O"]
+    letter =  bingo_array.sample
+    number = rand(100) + 1
+    bingo_hash = Hash.new
+    bingo_hash[letter] = number
+    p bingo_hash
+  end
+
 
 end
 
@@ -198,6 +204,8 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
+
+new_game.gen
 
 
 #Reflection
