@@ -8,6 +8,9 @@
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
 #fill in the outline here
+# Store the letters bingo into a data structure
+# create a variable that will generate a random number between 1 and 100
+# create a new variable that will store the letter and number together
 
 # def gen()
 #   bingo_array = ["B","I","N","G","O"]
@@ -24,65 +27,38 @@
 # Check the called column for the number called.
   #fill in the outline here
 
+# Identify which bingo letter is called
+# Check bingo letter against the column in the grid
+
 # bingo_hash.each{|k,v|
 #   if k == "B"
 #     board.each_index do |i|
 #       subarray = board[i]
 #       subarray.each_index do |x|
-#        # board[i][0]
-#       end
-#       if v == board[i][0]
-#         puts "True"
-#       else
-#         puts "False"
 #       end
 #     end
 #   elsif k == "I"
 #     board.each_index do |i|
 #       subarray = board[i]
 #       subarray.each_index do |x|
-#        # board[i][0]
-#       end
-#       if v == board[i][1]
-#         puts "True"
-#       else
-#         puts "False"
 #       end
 #     end
 #   elsif k == "N"
 #     board.each_index do |i|
 #       subarray = board[i]
 #       subarray.each_index do |x|
-#        # board[i][0]
-#       end
-#       if v == board[i][2]
-#         puts "True"
-#       else
-#         puts "False"
 #       end
 #     end
 #   elsif k == "G"
 #     board.each_index do |i|
 #       subarray = board[i]
 #       subarray.each_index do |x|
-#        # board[i][0]
-#       end
-#       if v == board[i][3]
-#         puts "True"
-#       else
-#         puts "False"
 #       end
 #     end
 #   elsif k == "0"
 #     board.each_index do |i|
 #       subarray = board[i]
 #       subarray.each_index do |x|
-#        # board[i][0]
-#       end
-#       if v == board[i][4]
-#         puts "True"
-#       else
-#         puts "False"
 #       end
 #     end
 #   end
@@ -91,6 +67,10 @@
 
 # If the number is in the column, replace with an 'x'
   #fill in the outline here
+# Iterate through the data structure to identify the subarray within
+# the parent array.
+# Identify the coordinates of the number that matches the number generated
+# replace the number in the coordinates with an X
 
 # bingo_hash.each{|k,v|
 #   if k == "B"
@@ -141,6 +121,9 @@
 
 # Display the board to the console (prettily)
   #fill in the outline here
+
+# Store the information in an array.
+# Iterate through the array to display the elements in a grid
 
 # def print_2d_array(board, cs=3)
 #   report = []
@@ -340,12 +323,12 @@ new_game.call
 new_game.check
 
 
-
-
-
 #Reflection
 =begin
 How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
+It was good that the assignment already came with an approach of
+items to accomplish. From there I broke out those objectives into
+smaller task which made psuedocoding easeir.
 
 
 What are the benefits of using a class for this challenge?
