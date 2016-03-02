@@ -4,24 +4,28 @@
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
-#
-#
+# require_relative allows one file to make a reference against a seperate file based on the file path
 require_relative 'state_data'
 
 class VirusPredictor
+  attr_reader :state_of_origin, :population_density, :population
 
+# run automatically when and sets the variables state, population and population density. Taking in three parameters and assigns themselves to each of the corresponding variables.
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
 
+# calls two other private methods predicted_deaths and speed_of_spread and also provides corresponding arguments.
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
   end
 
   private
+
+# A method that takes a parameter, one of which is population.  The code block brances based on whether the population_density is within a given threshold and calcuates the numbers of deaths based on a different multiple.  The value returned is an integer. Prints the values evaluated in the code block as a string.
 
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
@@ -41,6 +45,7 @@ class VirusPredictor
 
   end
 
+# Takes in two parameters and sets a variable named speed to 0.0. Based on different population threshold a speed rate is calculated. The value evaluated is printed to the screen as a string.
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
@@ -59,10 +64,16 @@ class VirusPredictor
     end
 
     puts " and will spread across the state in #{speed} months.\n\n"
+  end
+end
 
+
+  STATE_DATA.each do |key, value|
+   VirusPredictor.new(key, STATE_DATA[key][:population_density], STATE_DATA[key][:population]).virus_effects
   end
 
-end
+
+
 
 #=======================================================================
 
@@ -82,6 +93,21 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
 
+#psuedocode
+# Make a new method to create report for all 50 states
+# Iterate through the hash STATE_DATA and then access all informatio in each key
+# Run the calculation
+# Display the results as a full report for all 50 states
+
 
 #=======================================================================
 # Reflection Section
+=begin
+What are the differences between the two different hash syntaxes shown in the state_data file?
+What does require_relative do? How is it different from require?
+What are some ways to iterate through a hash?
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+What concept did you most solidify in this challenge?
+
+
+=end
