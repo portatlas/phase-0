@@ -48,25 +48,25 @@ SELECT region_name FROM regions WHERE region_name LIKE '%Central';
 SELECT region_name, state_name FROM states INNER JOIN regions ON states.region_id=regions.id ORDER bY region_id;
 </pre>
 
-![SCHEMA](/schema.PNG)
+![SCHEMA](imgs/schema.PNG)
 
-<!--
-What are databases for?
+
+**What are databases for?**
 Databases are use for storing information and allows efficent access
 to data from other applictions.
 
-What is a one-to-many relationship?
+**What is a one-to-many relationship?**
 One-to-many relationships in the context of database structures refers to
 when one data element can be referenced to many other elements.  For example, in our contact information, most people can have multiple mobile phone numbers but for the most part most mobile phone numbers belongs to just one person.
 
-What is a primary key? What is a foreign key? How can you determine which is which?
+**What is a primary key? What is a foreign key? How can you determine which is which?**
 A primary is a unique record in a database table. A foreign key is
 a field in table that is a primary key in another table.
 
-How can you select information out of a SQL database? What are some general guidelines for that?
+**How can you select information out of a SQL database? What are some general guidelines for that?**
 You can use the SELECT clause to query information from an SQL database.
 The general guideline is that you want to SELECT the data you required,
 from the table that stores that information and you can filter or sort the
 information based on your criteria.
--->
+
 
