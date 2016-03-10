@@ -74,6 +74,21 @@ var officers = {
 // input: votes
 // output: a tally with count of votes for Bob, the winner for each position
 
+//  -- count/tally up votes of each voter function --
+// make a new function that takes one parameter
+// this parameter will correspond to whichever role we will need to tally or count up e.g. president, v.p., treas, sec
+// this parameter will take the place of 'pres','vp', etc
+// (ok this works when you feed an individual role into the function. Now I want the code
+// to work automatically so that it can count all the roles in one fell swoop.)
+
+// Remove parameter
+// FOR length of nested object
+//   subsitute each of the property key labels into this code block like it was a parameter
+//   use counter i as index for each nested object property
+
+
+
+//  -- assign victor of each role --
 
 // __________________________________________
 // Initial Solution
