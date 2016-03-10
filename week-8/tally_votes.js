@@ -87,7 +87,6 @@ var officers = {
 //   use counter i as index for each nested object property
 
 
-
 //  -- assign victor of each role --
 
 // __________________________________________
@@ -151,62 +150,33 @@ var officers = {
 // __________________________________________
 // Refactored Solution
 
-
-
-for (var i = 0; i < 1; i++) {
-  for (var key in votes){
-      var a = votes[key]["president"]
-      voteCount["president"][a] = voteCount["president"][a]? ++voteCount["president"][a]: 1;
+var tally_names = function(position){
+  for (var i = 0; i < 1; i++) {
+    for (var key in votes){
+      var a = votes[key][position];
+      voteCount[position][a] = voteCount[position][a]? ++voteCount[position][a]: 1;
+    }
   }
 }
-var sortable = [];
-for (var tallyCount in voteCount["president"])
-      sortable.push([tallyCount, voteCount["president"][tallyCount]])
-      sortable.sort(sorter)
-      officers.president = sortable[0][0];
 
-
-for (var i = 0; i < 1; i++) {
-  for (var key in votes){
-      var a = votes[key]["vicePresident"]
-      voteCount["vicePresident"][a] = voteCount["vicePresident"][a]? ++voteCount["vicePresident"][a]: 1;
+var assign_winner = function(position){
+  var sortable = [];
+  for (var tallyCount in voteCount[position]){
+    sortable.push([tallyCount, voteCount[position][tallyCount]]);
+    sortable.sort(function(b, a) {return a[1] - b[1]});
+    officers[position] = sortable[0][0];
   }
 }
-var sortable = [];
-for (var tallyCount in voteCount["vicePresident"])
-      sortable.push([tallyCount, voteCount["vicePresident"][tallyCount]])
-      sortable.sort(sorter)
-      officers.vicePresident = sortable[0][0];
 
-for (var i = 0; i < 1; i++) {
-  for (var key in votes){
-      var a = votes[key]["secretary"]
-      voteCount["secretary"][a] = voteCount["secretary"][a]? ++voteCount["secretary"][a]: 1;
+var each_role = function(){
+  for (var i = 0; i < 4; i++) {
+    var roles = Object.getOwnPropertyNames(votes.Alex);
+    tally_names(roles[i]);
+    assign_winner(roles[i]);
   }
 }
-var sortable = [];
-for (var tallyCount in voteCount["secretary"])
-      sortable.push([tallyCount, voteCount["secretary"][tallyCount]])
-      sortable.sort(sorter)
-      officers.secretary = sortable[0][0];
 
-for (var i = 0; i < 1; i++) {
-  for (var key in votes){
-      var a = votes[key]["treasurer"]
-      voteCount["treasurer"][a] = voteCount["treasurer"][a]? ++voteCount["treasurer"][a]: 1;
-  }
-}
-var sortable = [];
-for (var tallyCount in voteCount["treasurer"])
-      sortable.push([tallyCount, voteCount["treasurer"][tallyCount]])
-      sortable.sort(sorter)
-      officers.treasurer = sortable[0][0];
-
-
-function sorter (b,a){
-  return a[1] - b[1]
-};
-
+each_role();
 
 
 // __________________________________________
